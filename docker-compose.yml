@@ -22,7 +22,7 @@ services:
       DB_DATABASE: ${DB_DATABASE}
     depends_on:
       - db
-    # command: sh -c "node ace migration:run && node bin/server.js"
+    command: sh -c "node ace migration:run && node bin/server.js"
   
   db:
     image: postgres
